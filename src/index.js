@@ -48,7 +48,6 @@ function Layout() {
                 <Outlet />
             </main>
             {/*<footer> <MusicPlayer /> </footer>*/}
-            <MusicPlayer />
         </div>
     );
 }
