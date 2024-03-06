@@ -12,6 +12,7 @@ import {AuthProvider} from "./components/Auth/context/AuthProvider";
 import Unauthorized from "./components/Unauthorized";
 import RequireAuth from "./components/RequireAuth";
 import Creator from "./components/Creator";
+import MusicPlayer from "./components/MusicPlayer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
