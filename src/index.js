@@ -4,15 +4,15 @@ import './css/index.css';
 import HomePage from "./components/HomePage"
 import {createBrowserRouter, RouterProvider, createRoutesFromElements, Route, Outlet} from "react-router-dom";
 import ProfilePage from "./components/ProfilePage";
-import NotFoundPage from "./components/NotFoundPage";
+import NotFoundPage from "./components/Basic/NotFoundPage";
 import Login from "./components/Auth/Login"
 import Register from "./components/Auth/Register";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Basic/Navbar";
 import {AuthProvider} from "./components/Auth/context/AuthProvider";
-import Unauthorized from "./components/Unauthorized";
-import RequireAuth from "./components/RequireAuth";
+import Unauthorized from "./components/Basic/Unauthorized";
+import RequireAuth from "./components/Basic/RequireAuth";
 import Creator from "./components/Creator";
-import MusicPlayer from "./components/MusicPlayer";
+import MusicPlayer from "./components/Basic/MusicPlayer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -47,7 +47,7 @@ function Layout() {
 
                 <Outlet />
             </main>
-            {/*<footer> <MusicPlayer /> </footer>*/}
+            <footer> <MusicPlayer /> </footer>
         </div>
     );
 }

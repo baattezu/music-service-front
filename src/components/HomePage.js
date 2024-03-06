@@ -1,5 +1,4 @@
 import React , { useState, useEffect } from 'react'
-import Navbar from "./Navbar";
 import useAuth from "./Auth/hooks/useAuth";
 
 const HomePage = () => {
