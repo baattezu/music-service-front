@@ -38,16 +38,18 @@ const router = createBrowserRouter(
 );
 function Layout() {
     return (
-        <>
+        <div>
             <header>
                 <Navbar />
             </header>
             <main>
                 {/* 2️⃣ Render the app routes via the Layout Outlet */}
+
                 <Outlet />
             </main>
-            <footer>©️ me 2023</footer>
-        </>
+            {/*<footer> <MusicPlayer /> </footer>*/}
+            <MusicPlayer />
+        </div>
     );
 }
 
